@@ -1,6 +1,9 @@
 img{
-    width:300px
+    width:300px;
 }
 a{
-    font-size: 90px
+    font-size: 90px;
+}
+p{
+    font-size: 30;
 }
