@@ -1,9 +1,151 @@
-img{
-    width:300px;
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-a{
-    font-size: 90px;
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
-p{
-    font-size: 30;
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-container {
+    flex: 0 0 100px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.btn-back {
+    background-color: #000;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 0;
+}
+
+.club-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.club-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.leader-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.leader-image-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ff69b4;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0;
+    z-index: 2;
+}
+
+.leader-image-circle::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 105, 180, 0.3);
+    top: -25px;
+    left: -25px;
+    z-index: -1;
+}
+
+.leader-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.club-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        margin-top: 15px;
+    }
+    
+    .leader-image-circle {
+        width: 120px;
+        height: 120px;
+    }
 }
