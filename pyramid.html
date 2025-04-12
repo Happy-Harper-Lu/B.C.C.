@@ -6,12 +6,26 @@
     <title>B.C.C. pyramid</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+         .triangle-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
         .triangle {
             width: 0;
             height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid blue;
+            border-left: 500px solid transparent;
+            border-right: 500px solid transparent;
+            border-bottom: 500px solid blue;
+        }
+        .triangle-text {
+            position: absolute;
+            top: 40px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            color: white; /* Change color for contrast */
+            font-weight: bold;
+            text-align: center;
         }
     </style>
 </head>
@@ -25,10 +39,13 @@
             <ul class="nav-links">
                 <li><a href="join.html">join</a></li>
                 <li><a href="index.html">B.C.C.</a></li>
-                <li><a href="index.html" class="btn-back">Back</a></li>
+                <li><a href="info.html">Back</a></li>
             </ul> 
         </nav>
-        <div class="triangle"></div>
     </header>
+    <div class="triangle-container">
+        <div class="triangle"></div>
+        <div class="triangle-text">wheeeeeeeeeeeee!!!!!</div>
+    </div>
 </body>
 </html>
